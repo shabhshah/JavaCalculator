@@ -49,33 +49,83 @@ public class JavaCalculator extends javax.swing.JFrame {
 
         btnOne.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         btnOne.setText("1");
+        btnOne.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOneActionPerformed(evt);
+            }
+        });
 
         btnTwo.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         btnTwo.setText("2");
+        btnTwo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTwoActionPerformed(evt);
+            }
+        });
 
         btnThree.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         btnThree.setText("3");
+        btnThree.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnThreeActionPerformed(evt);
+            }
+        });
 
         btnFour.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         btnFour.setText("4");
+        btnFour.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFourActionPerformed(evt);
+            }
+        });
 
         btnFive.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         btnFive.setText("5");
+        btnFive.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFiveActionPerformed(evt);
+            }
+        });
 
         btnSix.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         btnSix.setText("6");
+        btnSix.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSixActionPerformed(evt);
+            }
+        });
 
         btnSeven.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         btnSeven.setText("7");
+        btnSeven.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSevenActionPerformed(evt);
+            }
+        });
 
         btnEight.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         btnEight.setText("8");
+        btnEight.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEightActionPerformed(evt);
+            }
+        });
 
         btnNine.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         btnNine.setText("9");
+        btnNine.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNineActionPerformed(evt);
+            }
+        });
 
         btnZero.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         btnZero.setText("0");
+        btnZero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnZeroActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -203,6 +253,57 @@ public class JavaCalculator extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAddActionPerformed
 
+    private void btnTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTwoActionPerformed
+        String btnTwoText = txtDisplay.getText() + btnTwo.getText();
+        txtDisplay.setText(btnTwoText);
+    }//GEN-LAST:event_btnTwoActionPerformed
+
+    private void btnThreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThreeActionPerformed
+        String btnThreeText = txtDisplay.getText() + btnThree.getText();
+        txtDisplay.setText(btnThreeText);
+    }//GEN-LAST:event_btnThreeActionPerformed
+
+    private void btnOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOneActionPerformed
+        String btnOneText = txtDisplay.getText() + btnOne.getText();
+        txtDisplay.setText(btnOneText);
+    }//GEN-LAST:event_btnOneActionPerformed
+
+    private void btnFourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFourActionPerformed
+        String btnFourText = txtDisplay.getText() + btnFour.getText();
+        txtDisplay.setText(btnFourText);
+    }//GEN-LAST:event_btnFourActionPerformed
+
+    private void btnFiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFiveActionPerformed
+        String btnFiveText = txtDisplay.getText() + btnFive.getText();
+        txtDisplay.setText(btnFiveText);
+    }//GEN-LAST:event_btnFiveActionPerformed
+
+    private void btnSixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSixActionPerformed
+        String btnSixText = txtDisplay.getText() + btnSix.getText();
+        txtDisplay.setText(btnSixText);
+    }//GEN-LAST:event_btnSixActionPerformed
+
+    private void btnSevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSevenActionPerformed
+        String btnSevenText = txtDisplay.getText() + btnSeven.getText();
+        txtDisplay.setText(btnSevenText);
+    }//GEN-LAST:event_btnSevenActionPerformed
+
+    private void btnEightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEightActionPerformed
+        String btnEightText = txtDisplay.getText() + btnEight.getText();
+        txtDisplay.setText(btnEightText);
+    }//GEN-LAST:event_btnEightActionPerformed
+
+    private void btnNineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNineActionPerformed
+        String btnNineText = txtDisplay.getText() + btnNine.getText();
+        txtDisplay.setText(btnNineText);
+    }//GEN-LAST:event_btnNineActionPerformed
+
+    private void btnZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZeroActionPerformed
+        String btnZeroText = txtDisplay.getText() + btnZero.getText();
+        txtDisplay.setText(btnZeroText);
+    }//GEN-LAST:event_btnZeroActionPerformed
+
+    
     /**
      * @param args the command line arguments
      */
