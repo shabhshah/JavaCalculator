@@ -10,7 +10,10 @@ package jCalculator;
  * @author rishabh
  */
 public class JavaCalculator extends javax.swing.JFrame {
-
+    
+    private double total1 = 0.0;
+    private double total2 = 0.0;
+    
     /**
      * Creates new form JavaCalculator
      */
@@ -188,8 +191,18 @@ public class JavaCalculator extends javax.swing.JFrame {
         });
 
         btnEqual.setText("=");
+        btnEqual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEqualActionPerformed(evt);
+            }
+        });
 
         btnClear.setText("Clear");
+        btnClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClearActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -250,7 +263,8 @@ public class JavaCalculator extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-        // TODO add your handling code here:
+        total1 = total1 + Double.parseDouble(txtDisplay.getText());
+        txtDisplay.setText("");
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTwoActionPerformed
@@ -302,6 +316,17 @@ public class JavaCalculator extends javax.swing.JFrame {
         String btnZeroText = txtDisplay.getText() + btnZero.getText();
         txtDisplay.setText(btnZeroText);
     }//GEN-LAST:event_btnZeroActionPerformed
+
+    private void btnEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqualActionPerformed
+        total2 = total1 + Double.parseDouble(txtDisplay.getText());
+        txtDisplay.setText(Double.toString(total2));
+        total1 = 0;
+    }//GEN-LAST:event_btnEqualActionPerformed
+
+    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+        total2 = 0;
+        txtDisplay.setText("");
+    }//GEN-LAST:event_btnClearActionPerformed
 
     
     /**
