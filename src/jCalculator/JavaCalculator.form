@@ -260,7 +260,6 @@
                               <Component id="btnAdd" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
                               <Component id="btnEqual" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                       <Component id="btnClear" alignment="1" min="-2" pref="70" max="-2" attributes="0"/>
                   </Group>

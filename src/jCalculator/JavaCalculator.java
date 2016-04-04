@@ -269,7 +269,7 @@ public class JavaCalculator extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-        total1 = total1 + Double.parseDouble(txtDisplay.getText());
+        total1 += Double.parseDouble(txtDisplay.getText());
         txtDisplay.setText("");
     }//GEN-LAST:event_btnAddActionPerformed
 
